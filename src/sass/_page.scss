@@ -1,0 +1,453 @@
+ body {
+     font-family: $primary-font;
+ }
+
+
+ .arrowId {
+     transform: rotate(20deg);
+ }
+
+ #hoverTransition {
+     transition: transform 0.7s ease;
+
+     &:hover {
+         transform: scale(0.95, 0.95);
+     }
+ }
+
+ .menuD {
+     a {
+         padding-left: 0;
+     }
+ }
+
+ .bg-img {
+     background-size: cover !important;
+     background-repeat: no-repeat !important;
+     background-position: center !important;
+ }
+
+ .banner {
+     background: url('../image/banner1.jpg');
+     height: calc(100vh - 93.2px);
+     background-size: cover;
+     display: flex;
+     align-items: center;
+
+     .banner-text {
+         max-width: 500px;
+
+         h1 {
+             line-height: 75px;
+         }
+     }
+ }
+
+ .navbar-brand {
+     font-size: 45px;
+ }
+
+ a {
+     &.promo-code {
+         font-size: 12px;
+     }
+
+     &:hover {
+         text-decoration: none;
+         color: map-get($commonColors, "secondaryColor");
+     }
+ }
+
+
+ .card-img-top {
+     mix-blend-mode: luminosity;
+     transition: transform 0.5s;
+
+     &:hover {
+         mix-blend-mode: unset;
+         transform: scale(0.95, 0.95);
+     }
+
+ }
+
+ .promo-code {
+     font-size: 12px;
+     padding: 10px;
+ }
+
+ i {
+     margin-left: 10px;
+ }
+
+ .dropdown-menu {
+     width: 1000px;
+     height: auto;
+
+     .menuD {
+         padding: 30px;
+     }
+ }
+
+ section {
+     padding: 50px 0;
+ }
+
+ .text-container {
+     h2 {
+         font-size: 18px;
+     }
+
+     p {
+         font-size: 10px;
+     }
+
+     a {
+         font-size: 15px;
+     }
+
+ }
+
+ .textContainer-padding {
+     padding-top: 30px;
+     padding-left: 20px;
+ }
+
+ .product-grid-display {
+     .product-small {
+         height: 200px;
+     }
+
+     .product-large {
+         height: 415px;
+     }
+ }
+
+ .row {
+     margin: 0px;
+ }
+
+ .banner2 {
+     background: url("../image/banner2.jpg");
+     background-size: cover;
+     align-items: center;
+
+     .banner2-text {
+         padding: 200px 0;
+
+         h1 {
+             font-size: 40px;
+         }
+
+         p {
+             font-size: 20px;
+         }
+
+         i {
+             color: black;
+         }
+
+     }
+
+     .play-button {
+         text-align: center;
+         font-size: 100px;
+
+         i {
+             animation: playButton 3s ease-out infinite;
+         }
+     }
+ }
+
+ @keyframes playButton {
+     0% {
+         color: black;
+
+     }
+
+     50% {
+         color: white;
+         transform: translate(0, 15px);
+
+     }
+
+     100% {
+         color: black;
+     }
+ }
+
+
+ .text-new-danger {
+     color: map-get($commonColors, "danger-new");
+ }
+
+ .benefits {
+     width: 100%;
+
+     h2 {
+         font-size: 25px;
+     }
+
+     p {
+         font-size: 10px;
+     }
+
+     .col-md-3 {
+         padding: 40px;
+     }
+ }
+
+ .footer {
+     background-color: map-get($commonColors, "primeColor");
+
+     .text-box {
+         margin: 0 auto;
+         padding: 50px;
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+
+     .banner {
+         background: url('../image/banner1.jpg');
+         height: 38vh;
+         background-size: cover;
+         display: flex;
+         align-items: center;
+
+         .banner-text {
+             max-width: 500px;
+
+             h1 {
+                 font-size: 20px;
+                 line-height: 35px;
+             }
+
+             h6 {
+                 font-size: 15px;
+             }
+
+             p {
+                 font-size: 10px;
+             }
+         }
+     }
+
+     .banner2 {
+
+         .banner2-text {
+             padding: 20px 0;
+
+             h1 {
+                 font-size: 30px;
+             }
+
+             p {
+                 font-size: 10px;
+             }
+
+             i {
+                 color: black;
+             }
+
+             .play-button {
+
+                 font-size: 50px;
+             }
+
+         }
+     }
+
+     .navbar-brand {
+         font-size: 25px;
+     }
+
+     a {
+         &.promo-code {
+             font-size: 10px;
+         }
+     }
+
+     i {
+         margin-left: 10px;
+     }
+
+     .dropdown-menu {
+         width: 500px;
+         height: auto;
+
+         .menuD {
+             padding: 30px;
+         }
+     }
+
+     .product-grid-display {
+
+         .product-large {
+             height: 200px;
+         }
+     }
+
+
+     .footer {
+
+         p {
+             display: none;
+         }
+     }
+
+ }
+
+
+ @media screen and (max-width: 800px) {
+     .banner {
+         background: url('../image/banner1.jpg');
+         height: 38vh;
+         background-size: cover;
+         display: flex;
+         align-items: center;
+     }
+ }
+
+
+
+ /*detail*/
+
+ .slider-for {
+     width: calc(100% - 114px);
+     height: auto;
+     margin: 0;
+     overflow: hidden;
+     display: inline-block;
+ }
+
+ img-slider {
+     width: 100%;
+     min-height: 100%;
+ }
+
+ .slide-container {
+     width: 50%;
+     display: inline-block;
+ }
+
+ .textBox {
+     // width: 40%;
+ }
+
+.tab-pane{
+ .text-bold {
+     li {
+         color: black;
+     }
+ }
+ }
+
+ .review {
+     padding: 70px;
+ }
+
+.reviewT{
+    width: 100%;
+    h5{
+        display: inline-block;
+    }
+    .fa{
+        color: gray;
+        display: inline-block;
+    }
+}
+
+ .slider-nav {
+     width: 100px;
+     display: inline-block;
+     margin: 0 auto;
+ }
+
+ .slider-nav .slick-track {
+     height: 85px;
+ }
+
+ .button-shop {
+     background-color: map-get($commonColors, "danger-new");
+     position: relative;
+ }
+
+ .slick-arrow {
+     position: absolute;
+     top: 50%;
+     z-index: 50;
+     margin-top: -12px;
+ }
+
+ .slick-prev {
+     left: 0;
+ }
+
+ .slick-next {
+     right: 0;
+ }
+
+ .nav-link {
+     color: grey;
+     margin: 10px;
+
+     &:hover {
+         color: grey;
+         border-bottom: solid 1px black;
+         border-radius: 0;
+         transition: .3s ease;
+     }
+ }
+
+ .nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link {
+     color: black;
+     background-color: transparent;
+     border-bottom: solid 1px black;
+     border-radius: 0;
+ }
+
+ .tab-content {
+     .heading-padding {
+         padding: 30px 0;
+     }
+
+     p {
+         color: gray;
+         font-size: 20px;
+         line-height: 30px;
+     }
+
+     li {
+         color: gray;
+         font-size: 16px;
+         line-height: 50px;
+     }
+
+     img {
+        width: auto;
+     }
+
+     .media{
+       width: 500px;
+
+       img{
+        height: auto;
+       }
+     }
+ }
+
+ @media screen and (max-width: 400px) {
+     
+.heading-padding{
+ padding: 0;
+ }
+
+
+.tab-pane{
+    ul{
+        font-size: 20px;
+    }
+}
+}
+
